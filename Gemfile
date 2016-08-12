@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
+ruby '2.2.4'
 # Use rb-readline so things work instead of exploding
 gem 'rb-readline'
 
@@ -54,5 +55,6 @@ end
 group :production do
 	# Use PostgreSQL with Heroku
 	gem 'pg'
-	#gem 'rails_12factor'
+	# Heroku: enable platform features
+	gem 'rails_12factor'
 end
