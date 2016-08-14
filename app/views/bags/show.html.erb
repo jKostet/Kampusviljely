@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @bag.owner %>
+</p>
+
+<p>
+  <strong>Co owners:</strong>
+  <%= @bag.co_owners %>
+</p>
+
+<p>
+  <strong>Site:</strong>
+  <%= @bag.site_id %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @bag.number %>
+</p>
+
+<%= link_to 'Edit', edit_bag_path(@bag) %> |
+<%= link_to 'Back', bags_path %>

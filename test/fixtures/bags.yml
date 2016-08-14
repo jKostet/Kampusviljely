@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  owner: MyString
+  co_owners: MyString
+  site_id: 1
+  number: 1
+
+two:
+  owner: MyString
+  co_owners: MyString
+  site_id: 1
+  number: 1
