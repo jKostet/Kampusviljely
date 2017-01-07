@@ -1,1 +1,15 @@
 <%# add navigation links to this file %>
+<li><%= link_to 'Sites', sites_path %></li>
+<li><%= link_to 'Committee', static_pages_home_path %></li> <!--todo-->
+<li><%= link_to 'Users', sites_path %></li> <!--todo-->
+<li><%= link_to 'About', static_pages_about_path %></li>
+<li><%= link_to 'Help', static_pages_help_path %></li>
+<% if false%> <!-- this practically comments out the lines below -->
+    <% if not current_user.nil? %>
+    <li><%= link_to current_user.username, current_user %></li>
+    <li><%= link_to 'Signout', signout_path, method: :delete %></li>
+<% else %>
+    <li><%= link_to 'Login', signin_path %></li>
+    <li><%= link_to 'Register', signup_path %></li>
+<% end %>
+<% end %>
